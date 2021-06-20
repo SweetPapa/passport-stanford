@@ -84,10 +84,11 @@ function strategy (options, verify) {
 
   // call the parent method before setting the strategy name,
   // otherwise the name will always be 'saml'
-  saml.Strategy.call(this, options, function (req, profile, done) {
-    req.session.strategy = this.name;
-    this.attributeMapper(profile, done);
-  }.bind(this));
+
+  // saml.Strategy.call(this, options, function (req, profile, done) {
+  //   req.session.strategy = this.name;
+  //   this.attributeMapper(profile, done);
+  // }.bind(this));
 
   // set the name of this strategy to either the name passed in
   // via the options, or the short name of the idp.
