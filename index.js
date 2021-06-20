@@ -85,7 +85,7 @@ function strategy (options, verify) {
   // call the parent method before setting the strategy name,
   // otherwise the name will always be 'saml'
 
-  let cSaml = new saml.Strategy.call(this, options, function (req, profile, done) {
+  saml.Strategy.call(this, options, function (req, profile, done) {
     req.session.strategy = this.name;
     this.attributeMapper(profile, done);
   }.bind(this));

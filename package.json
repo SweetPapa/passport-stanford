@@ -1,6 +1,6 @@
 {
   "name": "passport-stanford",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Passport-SAML wrapper for Stanford.EDU",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "passport-saml": "^3.1.0"
+    "passport-saml": "^1.2.0"
   },
   "engines": {
     "node": ">=4.3.2"
